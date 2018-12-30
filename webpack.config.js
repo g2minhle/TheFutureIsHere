@@ -1,4 +1,11 @@
 const path = require('path');
+const HtmlWebpackPlugin = require('html-webpack-plugin'); // to build from html template
+
+let plugins = [
+    new HtmlWebpackPlugin({
+        template: './src/index.html'
+    }),
+];
 
 module.exports = {
     entry: "./src/index.tsx",
@@ -17,4 +24,6 @@ module.exports = {
             { test: /\.tsx?$/, loader: "ts-loader" },
         ]
     },
+
+    plugins: plugins,
 };

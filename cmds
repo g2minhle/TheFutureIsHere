@@ -1,0 +1,19 @@
+npm init
+npm install --save-dev webpack
+npm install --save-dev webpack-cli
+npm install --save-dev typescript
+npm install --save-dev ts-loader
+npm install --save-dev html-webpack-plugin
+
+https://webpack.js.org/guides/getting-started/
+to get this file webpack.config.js
+
+const path = require('path');
+
+module.exports = {
+  entry: './src/index.js',
+  output: {
+    filename: 'main.js',
+    path: path.resolve(__dirname, 'dist')
+  }
+};
