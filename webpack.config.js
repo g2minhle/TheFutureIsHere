@@ -1,5 +1,8 @@
+const webpack = require('webpack'); //to access built-in plugins
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin'); // to minize js file
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // to build from html template
 const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // to extract css into it own file
+const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
 
 let plugins = [
     new HtmlWebpackPlugin({
@@ -13,7 +16,7 @@ let plugins = [
     })
 ];
 
-module.exports = {
+module.exports =  {
     entry: "./src/index.tsx",
     output: {
         filename: '[name].[contenthash].js',
@@ -60,5 +63,18 @@ module.exports = {
         ]
     },
 
+    optimization: {
+        minimizer: [
+          new UglifyJsPlugin({
+            cache: true,
+            parallel: true,
+            sourceMap: true // set to true if you want JS source maps
+          }),
+          new OptimizeCSSAssetsPlugin({})
+        ]
+      },
+
     plugins: plugins,
 };
+
+
