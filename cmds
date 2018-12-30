@@ -9,6 +9,13 @@ npm install --save-dev webpack-dev-server
 this is for debugging the site
     npm install --save-dev source-map-loader
 
+css loader
+    npm install --save-dev style-loader
+    npm install --save-dev css-loader
+    npm install --save-dev sass-loader
+    npm install --save-dev node-sass
+    npm install --save-dev mini-css-extract-plugin
+    
 https://webpack.js.org/guides/getting-started/
 to get this file webpack.config.js
 
