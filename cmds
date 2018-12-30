@@ -6,6 +6,9 @@ npm install --save-dev ts-loader
 npm install --save-dev html-webpack-plugin
 npm install --save-dev webpack-dev-server
 
+this is for debugging the site
+    npm install --save-dev source-map-loader
+
 https://webpack.js.org/guides/getting-started/
 to get this file webpack.config.js
 
@@ -18,3 +21,4 @@ module.exports = {
     path: path.resolve(__dirname, 'dist')
   }
 };
+
