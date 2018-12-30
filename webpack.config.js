@@ -14,10 +14,16 @@ module.exports = {
         path: path.resolve(__dirname, 'dist')
     },
 
+    devServer: {
+        contentBase: './dist',
+        historyApiFallback: true
+    },
+
     resolve: {
         // Add '.ts' and '.tsx' as resolvable extensions.
         extensions: [".ts", ".tsx", ".js", ".json"]
     },
+
     module: {
         rules: [
             // All files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'.
