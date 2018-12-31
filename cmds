@@ -21,6 +21,8 @@ npm install --save-dev optimize-css-assets-webpack-plugin
 
 npm install --save-dev glob
 
+npm install url-loader file-loader --save-dev
+
 https://webpack.js.org/guides/getting-started/
 to get this file webpack.config.js
 
