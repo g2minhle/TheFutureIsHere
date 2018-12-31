@@ -19,6 +19,8 @@ css loader
 npm install --save-dev uglifyjs-webpack-plugin
 npm install --save-dev optimize-css-assets-webpack-plugin
 
+npm install --save-dev glob
+
 https://webpack.js.org/guides/getting-started/
 to get this file webpack.config.js
 

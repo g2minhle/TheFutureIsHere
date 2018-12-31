@@ -1,4 +1,5 @@
 const webpack = require('webpack'); //to access built-in plugins
+const glob = require("glob");
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin'); // to minize js file
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // to build from html template
 const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // to extract css into it own file
@@ -17,7 +18,9 @@ let plugins = [
 ];
 
 module.exports =  {
-    entry: "./src/index.tsx",
+    entry: 
+        [ "./src/index.tsx"]
+        .concat(glob.sync("./src/**/*.scss")) ,
     output: {
         filename: '[name].[contenthash].js',
         path: `${__dirname}/dist`
