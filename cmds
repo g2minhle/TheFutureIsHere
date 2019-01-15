@@ -34,6 +34,13 @@ compress image
 
   npm install --save-dev imagemin-webpack-plugin
 
+test
+
+  npm install --save-dev jest enzyme @types/enzyme react-test-renderer ts-jest @types/jest
+  npm i --save-dev enzyme enzyme-adapter-react-16
+  to know more
+  https://jestjs.io/docs/en/webpack 
+
 https://webpack.js.org/guides/getting-started/
 to get this file webpack.config.js
 
