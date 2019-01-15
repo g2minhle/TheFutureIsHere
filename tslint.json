@@ -1,0 +1,17 @@
+{
+  "defaultSeverity": "error",
+  "extends": [
+    "tslint:recommended",
+    "tslint-react"
+  ],
+  "rules": {
+    "interface-name": [
+      true,
+      "never-prefix"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

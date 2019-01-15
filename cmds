@@ -20,12 +20,15 @@ npm install --save-dev uglifyjs-webpack-plugin
 npm install --save-dev optimize-css-assets-webpack-plugin
 
 npm install --save-dev glob
-
 npm install url-loader file-loader --save-dev
 
-npm install react react-dom react-router react-router-dom --save
+react 
+  npm install react react-dom react-router react-router-dom --save
+  npm install --save-dev @types/react @types/react-dom @types/react-router @types/react-router-dom
 
-npm install --save-dev @types/react @types/react-dom @types/react-router @types/react-router-dom
+linting
+  npm install --save-dev tslint tslint-react 
+  npm install --save-dev tslint-loader
 
 https://webpack.js.org/guides/getting-started/
 to get this file webpack.config.js

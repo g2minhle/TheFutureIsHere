@@ -6,7 +6,6 @@ export class IntroPage extends React.Component<any, any> {
 
     constructor(props: any) {
         super(props);
-        console.log(img1)
     }
 
     public render() {
