@@ -4,6 +4,7 @@ const UglifyJsPlugin = require('uglifyjs-webpack-plugin'); // to minize js file
 const HtmlWebpackPlugin = require('html-webpack-plugin'); // to build from html template
 const MiniCssExtractPlugin = require("mini-css-extract-plugin"); // to extract css into it own file
 const OptimizeCSSAssetsPlugin = require("optimize-css-assets-webpack-plugin");
+const ImageminPlugin = require('imagemin-webpack-plugin').default
 
 let plugins = [
     new HtmlWebpackPlugin({
@@ -14,6 +15,8 @@ let plugins = [
         // both options are optional
         filename: '[name].[hash].css',
         chunkFilename: '[id].[hash].css'
+    }),
+    new ImageminPlugin({
     })
 ];
 

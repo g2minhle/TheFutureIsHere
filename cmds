@@ -30,6 +30,10 @@ linting
   npm install --save-dev tslint tslint-react 
   npm install --save-dev tslint-loader
 
+compress image
+
+  npm install --save-dev imagemin-webpack-plugin
+
 https://webpack.js.org/guides/getting-started/
 to get this file webpack.config.js
 
